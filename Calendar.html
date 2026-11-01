@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WISCalendar</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="https://ionicframework.com">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="Calendar.css" />
+
+    <!-- Local Moment.js library -->
+    <script src="moment.js"></script>
+</head>
+<body>
+
+    <div class="calendar-app">
+        <!-- MAIN CALENDAR -->
+        <main class="calendar-main">
+            <header class="calendar-header">
+                <button id="prev-month-btn" class="nav-btn"><i class="ion-ios-arrow-back"></i></button>
+                <h1 id="month-year-display">Month Year</h1>
+                <button id="next-month-btn" class="nav-btn"><i class="ion-ios-arrow-forward"></i></button>
+            </header>
+            
+            <!-- WEEKS -->
+            <div class="weekdays-grid">
+                <div>MON</div><div>TUE</div><div>WED</div><div>THU</div><div>FRI</div><div>SAT</div><div>SUN</div>
+            </div>
+
+            <!-- CALENDAR DAYS GRID  -->
+            <div id="days-grid" class="days-grid"></div>
+        </main>
+
+        <!-- DESCRIPTION DIV  -->
+        <aside class="events-sidebar">
+            <div id="active-date-title" class="sidebar-header">
+                <h2>Select a Date</h2>
+            </div>
+            <div id="sidebar-events-list" class="sidebar-body">
+                <p class="no-events">Click a calendar day to view scheduled events.</p>
+            </div>
+            <div class="navigationStuff">
+              <button class="homeButton" onclick="window.location.href='index.html'">
+                Home
+              </button>
+            </div>
+        </aside>
+    </div>
+
+    <!-- EXCECUTE SCRIPT -->
+    <script src="Calendar.js"></script>
+
+    <footer>
+      <!-- INTERESTING FOOTER? -->
+    </footer>
+</body>
+</html>

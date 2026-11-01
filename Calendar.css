@@ -1,0 +1,217 @@
+:root {
+    --bg-main: #f5f8ff;
+    --panel-white: #f5f8ff;
+    --sidebar-dark: #d6deff;
+    --text-dark: #040d34;
+    --text-muted: #9f5082;
+
+    --color-blue: #8eb7ff;
+    --color-purple: #eeaeff;
+    --color-green: #b5ffca;
+    --color-red: #ffa7a7;
+    --color-orange: #ffe28a;
+    --color-yellow: #fdffb6;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Verdana', sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-dark);
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* GRID SPLIT */
+.calendar-app {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* CALENDAR CONTAINER */
+.calendar-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: var(--panel-white);
+    padding: 20px 40px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.calendar-header h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 0;
+    color: #1d288a; /* ClearNavy */
+    font-family: 'Georgia', serif;
+    font-weight: normal;
+    font-style: italic;
+    text-shadow: 2px 2px 0px #bbc0f8; /* LightPurple */
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--text-dark);
+    cursor: pointer;
+    padding: 5px 15px;
+    transition: color 0.2s;
+}
+.nav-btn:hover { color: var(--color-blue); }
+
+/* GRID COLUMNS */
+.weekdays-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    font-weight: 900;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    padding-bottom: 10px;
+    border-bottom: 1px solid #edf2f7;
+}
+
+.days-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr); /* Divides remaining height into 6 rows */
+    flex: 1;
+    margin-top: 10px;
+}
+
+/* CELLS */
+.day-cell {
+    border-bottom: 3px solid #1d288a;
+    border-right: 3px solid #1d288a;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+.day-cell:nth-child(7n) { border-right: none; }
+
+.day-cell:hover {
+    background-color: #f7fafc;
+}
+
+.day-number {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+/* STATES */
+.other-month { color: #cbd5e0; }
+.is-today { background-color: #d6deff; }
+.is-today .day-number { font-weight: 900; color: var(--color-blue); }
+.is-selected { background-color: #dcd8ff !important; border: 1px solid #cbd5e0; }
+
+/* EVENT DOTS */
+.dots-container {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+.event-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.dot-blue { background-color: var(--color-blue); }
+.dot-orange { background-color: var(--color-orange); }
+.dot-red { background-color: var(--color-red); }
+.dot-purple { background-color: var(--color-purple); }
+.dot-yellow { background-color: var(--color-yellow); }
+.dot-green { background-color: var(--color-green); }
+
+/* DESCRIPTION OF EVENTS */
+.events-sidebar {
+    width: 380px;
+    background-color: var(--sidebar-dark);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.05);
+}
+
+.sidebar-header {
+    padding: 30px 20px;
+    border-bottom: 1px solid #2d3748;
+}
+
+.sidebar-header h2 {
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.sidebar-body {
+    padding: 20px;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.no-events {
+    color: #718096;
+    font-style: italic;
+}
+
+/* CARD DISPLAYS FOR DESCRIPTION */
+.sidebar-event-card {
+    background: #ffffff;
+    border: 1px solid #6269f0;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.sidebar-event-card h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.1rem;
+    color: #9f5082;
+    font-family: 'Georgia', serif;
+}
+
+.sidebar-event-card p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #1d288a;
+    line-height: 1.4;
+    font-family: 'Verdana', sans-serif;
+}
+
+/* CARD COLOURS */
+.border-blue { border-left: 4px solid var(--color-blue); }
+.border-orange { border-left: 4px solid var(--color-orange); }
+.border-red { border-left: 4px solid var(--color-red); }
+.border-green { border-left: 4px solid var(--color-green); }
+.border-yellow { border-left: 4px solid var(--color-yellow); }
+.border-purple { border-left: 4px solid var(--color-purple); }
+
+.navigationStuff {
+    text-align: center;
+}
+
+.homeButton {
+    color: #9f5082;
+    font-family: 'Georgia', serif;
+    font-size: 20px;
+    background: #ffffff;
+    border: 1px solid #6269f0;
+    padding: 15px;
+    margin-bottom: 15px;
+    padding-left: 130px;
+    padding-right: 130px;
+}
