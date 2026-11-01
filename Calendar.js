@@ -3,25 +3,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const SAMPLE_EVENTS = [
     { 
         title: 'LAT Club Fair', 
-        date: '2026-10-21', 
+        date: '2026-11-21', 
         color: 'purple', 
         desc: 'All club leaders should be prepared with a club board to recruit new club members.' 
     },
     { 
         title: 'Introductory Meeting', 
-        date: '2026-10-25', 
+        date: '2026-11-25', 
         color: 'yellow', 
         desc: 'This meeting is open for all students in STEM clubs. This meeting will go over what we do and our plans for the year as well as advertising for other clubs.' 
     },
     { 
         title: 'PlaceHolder', 
-        date: '2026-10-15', 
+        date: '2026-11-15', 
         color: 'orange', 
         desc: 'PlaceHolder Description' 
     },
     { 
         title: 'Placeholder', 
-        date: '2026-10-23', 
+        date: '2026-11-23', 
         color: 'red', 
         desc: 'PlaceHolder Description' 
     }
