@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         desc: 'Come to the computer lab to learn about 3d modeling and design your own figure or keychain! Your creations will be printed and distributed after the meeting.' 
     },
     { 
-        title: 'Women in STEMIntroductory Meeting', 
+        title: 'Women in STEM Introductory Meeting', 
         date: '2026-11-05', 
         color: 'purple', 
         desc: 'This meeting is open for all students in STEM clubs. This meeting will go over what we do and our plans for the year as well as introducing the other clubs.' 
