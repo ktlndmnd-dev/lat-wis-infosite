@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         title: 'Women in STEM Introductory Meeting', 
         date: '2026-11-05', 
         color: 'purple', 
-        desc: 'This meeting is open for all students in STEM clubs. This meeting will go over what we do and our plans for the year as well as introducing the other clubs.' 
+        desc: 'This meeting is open for all students. This meeting will go over what we do and our plans for the year as well as introducing the other clubs.' 
     }
 ];
 
