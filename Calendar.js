@@ -2,28 +2,16 @@ document.addEventListener('DOMContentLoaded', () => {
     // 1. EVENT ARRAY (MUST CHANGE INTO JSON FILE FOR SIMPLICITY)
     const SAMPLE_EVENTS = [
     { 
-        title: 'LAT Club Fair', 
-        date: '2026-11-21', 
+        title: 'Coding and Robotics Club Meeting', 
+        date: '2026-11-06', 
         color: 'purple', 
-        desc: 'All club leaders should be prepared with a club board to recruit new club members.' 
+        desc: 'Come to the computer lab to learn about 3d modeling and design your own figure or keychain! Your creations will be printed and distributed after the meeting.' 
     },
     { 
-        title: 'Introductory Meeting', 
-        date: '2026-11-25', 
+        title: 'Women in STEMIntroductory Meeting', 
+        date: '2026-11-05', 
         color: 'yellow', 
-        desc: 'This meeting is open for all students in STEM clubs. This meeting will go over what we do and our plans for the year as well as advertising for other clubs.' 
-    },
-    { 
-        title: 'PlaceHolder', 
-        date: '2026-11-15', 
-        color: 'orange', 
-        desc: 'PlaceHolder Description' 
-    },
-    { 
-        title: 'Placeholder', 
-        date: '2026-11-23', 
-        color: 'red', 
-        desc: 'PlaceHolder Description' 
+        desc: 'This meeting is open for all students in STEM clubs. This meeting will go over what we do and our plans for the year as well as introducing the other clubs.' 
     }
 ];
 
